@@ -288,8 +288,8 @@ print("Hello")
 led = machine.Pin("LED", machine.Pin.OUT)
 while True:
     led.off() 
-    time.sleep(1)
+    time.sleep(0.5)
     led.on()
-    time.sleep(1)
+    time.sleep(0.5)
     
 

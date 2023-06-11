@@ -288,6 +288,7 @@ print("Hello")
 led = machine.Pin("LED", machine.Pin.OUT)
 while True:
     led.off() 
+    # Sleeps the pico for 0.5s
     time.sleep(0.5)
     led.on()
     time.sleep(0.5)

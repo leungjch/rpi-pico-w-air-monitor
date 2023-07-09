@@ -22,6 +22,8 @@ services:
     image: grafana/grafana
     ports:
       - "3000:3000"
+    volumes:
+      - ./grafana.ini:/etc/grafana/grafana.ini
 
   mqtt:
     image: eclipse-mosquitto

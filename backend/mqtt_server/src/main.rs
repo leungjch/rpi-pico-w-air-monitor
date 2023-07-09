@@ -4,6 +4,7 @@ use std::error::Error;
 use serde::{Serialize, Deserialize};
 use serde_json::from_str;
 use std::time::Duration;
+use std::env;
 
 #[derive(Serialize, Deserialize, Debug)]
 struct SensorData {

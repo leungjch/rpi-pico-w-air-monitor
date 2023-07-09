@@ -9,9 +9,6 @@
 // set mqtt broker url to broker.hivemq.com
 const char *MQTT_BROKER_URL = "3.122.167.216";
 
-// 3.122.167.216
-// 3.77.248.146
-
 #ifndef LWIP_MQTT_EXAMPLE_IPADDR_INIT
 #if LWIP_IPV4
 #define LWIP_MQTT_EXAMPLE_IPADDR_INIT = IPADDR4_INIT(PP_HTONL(IPADDR_LOOPBACK))
@@ -60,13 +57,13 @@ void mqtt_pub_request_cb(void *arg, err_t result)
   }
   else
   {
-    printf("Publish is OK: %d\n", result);
+    printf("Publish resultd: OK\n");
   }
 }
 
 static void mqtt_incoming_publish_cb(void *arg, const char *topic, u32_t tot_len)
 {
-  printf("mqtt_incoming_publish_cb");
+  printf("mqtt_incoming_publish_cb\n");
   MQTT_CLIENT_DATA_T *mqtt_client = (MQTT_CLIENT_DATA_T *)arg;
   // strcpy(mqtt_client->topic, topic);
   strcpy((char *)mqtt_client->topic, (char *)topic);
@@ -88,7 +85,7 @@ static void mqtt_connection_cb(mqtt_client_t *client, void *arg, mqtt_connection
 
   if (status == MQTT_CONNECT_ACCEPTED)
   {
-    printf("MQTT_CONNECT_ACCEPTED");
+    printf("MQTT_CONNECT_ACCEPTED\n");
   }
 }
 
@@ -158,11 +155,6 @@ int main()
 
   mqtt->mqtt_client_inst = mqtt_client_new();
 
-  // mqtt_set_inpub_callback(mqtt_client,
-  //         mqtt_incoming_publish_cb,
-  //         mqtt_incoming_data_cb,
-  //         LWIP_CONST_CAST(void*, &mqtt_client_info));
-
   if (!ip4addr_aton(MQTT_BROKER_URL, &mqtt_ip))
   {
     printf("ip error\n");
@@ -222,10 +214,9 @@ int main()
     printf("Temp. = %.2f C\n", temperature / 100.f);
     printf("Humidity = %.2f %%\n", (double)humidity / (double)1024.0);
 
-    // publish temperature and pressure values to MQTT broker
+    // publish temperature and pressure values and humdidity to MQTT broker
     char buf[100];
-    sprintf(buf, "{\"temperature\": %.2f, \"pressure\": %.3f}", temperature / 100.f, pressure / 1000.f);
-    printf("Publishing now... %d\n", mqtt->mqtt_client_inst->conn_state);
+    sprintf(buf, "{\"temperature\": %.2f, \"pressure\": %.3f, \"humidity\": %.2f}", temperature / 100.f, pressure / 1000.f, (double)humidity / (double)1024.0);
 
     do_connect(mqtt, mqtt);
     // example_publish(mqtt->mqtt_client_inst, mqtt);

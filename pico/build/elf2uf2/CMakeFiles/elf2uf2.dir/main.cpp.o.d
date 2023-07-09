@@ -1,5 +1,5 @@
 CMakeFiles/elf2uf2.dir/main.cpp.o: \
- /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/tools/elf2uf2/main.cpp \
+ /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/tools/elf2uf2/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/7/cstdio \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
@@ -134,6 +134,6 @@ CMakeFiles/elf2uf2.dir/main.cpp.o: \
  /usr/include/c++/7/bits/algorithmfwd.h \
  /usr/include/c++/7/bits/stl_heap.h /usr/include/c++/7/bits/stl_tempbuf.h \
  /usr/include/c++/7/bits/uniform_int_dist.h /usr/include/c++/7/limits \
- /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/src/common/boot_uf2/include/boot/uf2.h \
+ /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/src/common/boot_uf2/include/boot/uf2.h \
  /usr/include/assert.h \
- /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/tools/elf2uf2/elf.h
+ /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/tools/elf2uf2/elf.h

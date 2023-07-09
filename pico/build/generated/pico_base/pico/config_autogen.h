@@ -4,8 +4,8 @@
 
 // based on PICO_CONFIG_HEADER_FILES:
 
-#include "/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/src/boards/include/boards/pico_w.h"
+#include "/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/src/boards/include/boards/pico_w.h"
 
 // based on PICO_RP2040_CONFIG_HEADER_FILES:
 
-#include "/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h"
+#include "/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h"

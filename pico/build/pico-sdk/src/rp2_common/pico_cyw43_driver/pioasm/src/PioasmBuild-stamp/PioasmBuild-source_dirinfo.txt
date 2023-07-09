@@ -4,6 +4,6 @@
 
 method=source_dir
 command=
-source_dir=/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/tools/pioasm
+source_dir=/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/tools/pioasm
 work_dir=
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk
+# Install script for directory: /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/leungjch/Documents/repo/pi-pico-air-monitoring/build/pico-sdk/tools/cmake_install.cmake")
-  include("/home/leungjch/Documents/repo/pi-pico-air-monitoring/build/pico-sdk/src/cmake_install.cmake")
-  include("/home/leungjch/Documents/repo/pi-pico-air-monitoring/build/pico-sdk/docs/cmake_install.cmake")
+  include("/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/build/pico-sdk/tools/cmake_install.cmake")
+  include("/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/build/pico-sdk/src/cmake_install.cmake")
+  include("/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/build/pico-sdk/docs/cmake_install.cmake")
 
 endif()
 

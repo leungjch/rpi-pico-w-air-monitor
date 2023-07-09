@@ -9,7 +9,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.2/CMakeSystem.cmake"
-  "/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/tools/pioasm/CMakeLists.txt"
+  "/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/tools/pioasm/CMakeLists.txt"
   "/usr/share/cmake-3.25/Modules/CMakeCXXCompiler.cmake.in"
   "/usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp"
   "/usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake"

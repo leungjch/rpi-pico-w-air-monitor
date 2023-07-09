@@ -11,18 +11,21 @@ Go to `pico`:
 cd pico
 ```
 
-Configure cmake with the following command:
-
+Make build directory and configure cmake:
 ```
+mkdir build
+cd build
 cmake -DPICO_BOARD=pico_w -DWIFI_SSID={YOUR_WIFI_SSD} -DWIFI_PASSW
-ORD={YOUR_WIFI_PASSWORD}
+ORD={YOUR_WIFI_PASSWORD} -DPICO_SDK_PATH={PATH_TO_PICO_SDK} ..
 ```
 
 Build:
 ```
-mkdir build
-cd build
-make
+make pico_air_monitor
 ```
 
-Follow steps in [Getting started with Raspberry Pi Pico](https://datasheets.raspberrypi.org/pico/getting-started-with-pico.pdf) to flash the Pico W.
+Follow steps in [Getting started with Raspberry Pi Pico](https://datasheets.raspberrypi.org/pico/getting-started-with-pico.pdf) to flash the build files to the Pico W.
+
+## Server
+The backend is a MQTT broker and a Rust server that subscribes to this MQTT broker and stores the data in a Redis instance. A Grafana instance is setup with the Redis data source to visualize the data.
+

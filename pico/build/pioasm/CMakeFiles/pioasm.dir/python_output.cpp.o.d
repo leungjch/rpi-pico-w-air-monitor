@@ -1,5 +1,5 @@
 CMakeFiles/pioasm.dir/python_output.cpp.o: \
- /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/tools/pioasm/python_output.cpp \
+ /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/tools/pioasm/python_output.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/7/array \
  /usr/include/c++/7/utility \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
@@ -151,7 +151,7 @@ CMakeFiles/pioasm.dir/python_output.cpp.o: \
  /usr/include/c++/7/bits/codecvt.h /usr/include/c++/7/bits/unique_ptr.h \
  /usr/include/c++/7/tuple /usr/include/c++/7/bits/uses_allocator.h \
  /usr/include/c++/7/bits/invoke.h /usr/include/c++/7/iostream \
- /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/tools/pioasm/output_format.h \
+ /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/tools/pioasm/output_format.h \
  /usr/include/c++/7/vector /usr/include/c++/7/bits/stl_uninitialized.h \
  /usr/include/c++/7/bits/stl_vector.h \
  /usr/include/c++/7/bits/stl_bvector.h /usr/include/c++/7/bits/vector.tcc \
@@ -169,4 +169,4 @@ CMakeFiles/pioasm.dir/python_output.cpp.o: \
  /usr/include/c++/7/bits/atomic_base.h \
  /usr/include/c++/7/bits/atomic_lockfree_defines.h \
  /usr/include/c++/7/backward/auto_ptr.h \
- /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/tools/pioasm/pio_disassembler.h
+ /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/tools/pioasm/pio_disassembler.h

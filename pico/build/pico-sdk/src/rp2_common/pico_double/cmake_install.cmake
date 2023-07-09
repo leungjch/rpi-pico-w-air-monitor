@@ -1,4 +1,4 @@
-# Install script for directory: /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/src/rp2_common/pico_double
+# Install script for directory: /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/src/rp2_common/pico_double
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

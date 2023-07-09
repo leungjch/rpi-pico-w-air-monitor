@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Linux")
 set(CMAKE_HOST_SYSTEM_VERSION "5.4.0-150-generic")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
-include("/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/cmake/preload/toolchains/pico_arm_gcc.cmake")
+include("/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/cmake/preload/toolchains/pico_arm_gcc.cmake")
 
 set(CMAKE_SYSTEM "PICO")
 set(CMAKE_SYSTEM_NAME "PICO")

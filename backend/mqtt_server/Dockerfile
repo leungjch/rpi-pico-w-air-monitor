@@ -1,9 +1,9 @@
 # Dockerfile
 FROM rust:1.67
 
-WORKDIR /usr/src/myapp
+WORKDIR /usr/src/mqtt_server
 COPY . .
 
 RUN cargo install --path .
 
-CMD ["myapp"]
+CMD ["mqtt_server"]

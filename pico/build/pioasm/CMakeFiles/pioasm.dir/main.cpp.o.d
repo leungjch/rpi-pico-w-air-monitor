@@ -1,5 +1,5 @@
 CMakeFiles/pioasm.dir/main.cpp.o: \
- /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/tools/pioasm/main.cpp \
+ /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/tools/pioasm/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/7/iostream \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
@@ -131,20 +131,20 @@ CMakeFiles/pioasm.dir/main.cpp.o: \
  /usr/include/c++/7/bits/basic_ios.tcc \
  /usr/include/c++/7/bits/ostream.tcc /usr/include/c++/7/istream \
  /usr/include/c++/7/bits/istream.tcc \
- /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/tools/pioasm/pio_assembler.h \
+ /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/tools/pioasm/pio_assembler.h \
  /usr/include/c++/7/algorithm /usr/include/c++/7/utility \
  /usr/include/c++/7/bits/stl_relops.h /usr/include/c++/7/bits/stl_algo.h \
  /usr/include/c++/7/bits/algorithmfwd.h \
  /usr/include/c++/7/bits/stl_heap.h /usr/include/c++/7/bits/stl_tempbuf.h \
  /usr/include/c++/7/bits/stl_construct.h \
  /usr/include/c++/7/bits/uniform_int_dist.h /usr/include/c++/7/limits \
- /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/tools/pioasm/gen/parser.hpp \
+ /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/tools/pioasm/gen/parser.hpp \
  /usr/include/c++/7/fstream /usr/include/c++/7/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++io.h \
  /usr/include/c++/7/bits/fstream.tcc /usr/include/c++/7/sstream \
  /usr/include/c++/7/bits/sstream.tcc \
- /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/tools/pioasm/pio_types.h \
+ /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/tools/pioasm/pio_types.h \
  /usr/include/c++/7/map /usr/include/c++/7/bits/stl_tree.h \
  /usr/include/c++/7/ext/aligned_buffer.h \
  /usr/include/c++/7/bits/stl_map.h /usr/include/c++/7/tuple \
@@ -166,7 +166,7 @@ CMakeFiles/pioasm.dir/main.cpp.o: \
  /usr/include/c++/7/bits/atomic_base.h \
  /usr/include/c++/7/bits/atomic_lockfree_defines.h \
  /usr/include/c++/7/backward/auto_ptr.h \
- /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/tools/pioasm/gen/location.h \
- /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/tools/pioasm/gen/location.h \
+ /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/tools/pioasm/gen/location.h \
+ /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/tools/pioasm/gen/location.h \
  /usr/include/c++/7/cassert /usr/include/assert.h \
- /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/tools/pioasm/output_format.h
+ /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/tools/pioasm/output_format.h

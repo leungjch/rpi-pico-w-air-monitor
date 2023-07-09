@@ -56,7 +56,7 @@ void mqtt_pub_request_cb(void *arg, err_t result)
 {
   if (result != ERR_OK)
   {
-    printf("Publish result: %d\n", result);
+    printf("Publish resultd: %d\n", result);
   }
   else
   {

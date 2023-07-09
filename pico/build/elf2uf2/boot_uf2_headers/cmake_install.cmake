@@ -1,4 +1,4 @@
-# Install script for directory: /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/src/common/boot_uf2
+# Install script for directory: /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/src/common/boot_uf2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

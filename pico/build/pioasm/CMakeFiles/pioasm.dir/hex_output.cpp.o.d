@@ -1,7 +1,7 @@
 CMakeFiles/pioasm.dir/hex_output.cpp.o: \
- /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/tools/pioasm/hex_output.cpp \
+ /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/tools/pioasm/hex_output.cpp \
  /usr/include/stdc-predef.h \
- /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/tools/pioasm/output_format.h \
+ /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/tools/pioasm/output_format.h \
  /usr/include/c++/7/vector /usr/include/c++/7/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \

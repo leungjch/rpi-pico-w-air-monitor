@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild"
+			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild"
 		},
 		{
-			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.rule"
+			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.rule"
 		},
 		{
-			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild-complete.rule"
+			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild-complete.rule"
 		},
 		{
-			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-build.rule"
+			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-build.rule"
 		},
 		{
-			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure.rule"
+			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure.rule"
 		},
 		{
-			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-download.rule"
+			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-download.rule"
 		},
 		{
-			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-install.rule"
+			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-install.rule"
 		},
 		{
-			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir.rule"
+			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir.rule"
 		},
 		{
-			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch.rule"
+			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch.rule"
 		},
 		{
-			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update.rule"
+			"file" : "/home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update.rule"
 		}
 	],
 	"target" : 

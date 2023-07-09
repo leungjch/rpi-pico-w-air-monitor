@@ -1,4 +1,4 @@
-# Install script for directory: /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico-sdk/src/common/pico_stdlib
+# Install script for directory: /home/leungjch/Documents/repo/pi-pico-air-monitoring/pico/pico-sdk/src/common/pico_stdlib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

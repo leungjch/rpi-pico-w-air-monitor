@@ -2,6 +2,7 @@ version: '3'
 services:
   myapp:
     build: ./mqtt_server
+    restart: always
     volumes:
       - .:/usr/src/myapp
     ports:

@@ -7,6 +7,11 @@ services:
       - .:/usr/src/myapp
     ports:
       - "8000:8000"
+    depends_on:
+      - redis
+    environment:
+      - REDIS_URL=redis://redis:6379
+
 
   redis:
     image: redislabs/redistimeseries

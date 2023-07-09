@@ -18,6 +18,9 @@ async fn main() -> Result<(), Box<dyn Error>> {
     let mqtt_port = 1883;
     let mqtt_client_name = "rust_client";
 
+    // Log creating new mqtt client
+    println!("Creating new mqtt client with name {} for broker {} on port {}", mqtt_client_name, mqtt_broker, mqtt_port);
+
     let mut mqttoptions = MqttOptions::new(mqtt_client_name, mqtt_broker, mqtt_port);
     mqttoptions.set_keep_alive(Duration::from_millis(15000));
 
@@ -28,7 +31,12 @@ async fn main() -> Result<(), Box<dyn Error>> {
     client.subscribe(topic, QoS::AtLeastOnce).await.unwrap();
 
     // Creating redis client
-    let redis_client = redis::Client::open("redis://0.0.0.0")?;
+    let redis_url = env::var("REDIS_URL").unwrap_or_else(|_| String::from("redis://localhost:6379"));
+
+    // Log creating new redis client
+    println!("Creating new redis client at url {}", redis_url);
+
+    let redis_client = redis::Client::open(redis_url)?;
     let mut redis_connection = redis_client.get_connection()?;
 
     loop {

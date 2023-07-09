@@ -53,11 +53,7 @@ void mqtt_pub_request_cb(void *arg, err_t result)
 {
   if (result != ERR_OK)
   {
-    printf("Publish resultd: %d\n", result);
-  }
-  else
-  {
-    printf("Publish resultd: OK\n");
+    printf("Publish result not OK: %d\n", result);
   }
 }
 
@@ -201,10 +197,10 @@ int main()
     int32_t raw_pressure;
     int32_t raw_humidity;
 
+    // Turn on LED
     cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
     sleep_ms(250);
-    cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 0);
-    sleep_ms(250);
+
 
     bme280_read_raw(&raw_temperature, &raw_pressure, &raw_humidity);
     int32_t temperature = bme280_convert_temp(raw_temperature, &params);
@@ -221,6 +217,9 @@ int main()
     do_connect(mqtt, mqtt);
     // example_publish(mqtt->mqtt_client_inst, mqtt);
     mqtt_publish(mqtt->mqtt_client_inst, "pico_bme280", buf, strlen(buf), 0, 0, mqtt_pub_request_cb, mqtt);
-    sleep_ms(1000);
+
+    // Turn off LED
+    cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 0);
+    sleep_ms(250);
   }
 }

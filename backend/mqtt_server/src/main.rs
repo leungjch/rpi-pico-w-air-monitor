@@ -28,7 +28,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
     client.subscribe(topic, QoS::AtLeastOnce).await.unwrap();
 
     // Creating redis client
-    let redis_client = redis::Client::open("redis://127.0.0.1/")?;
+    let redis_client = redis::Client::open("redis://0.0.0.0")?;
     let mut redis_connection = redis_client.get_connection()?;
 
     loop {

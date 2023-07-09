@@ -29,3 +29,12 @@ Follow steps in [Getting started with Raspberry Pi Pico](https://datasheets.rasp
 ## Server
 The backend is a MQTT broker and a Rust server that subscribes to this MQTT broker and stores the data in a Redis instance. A Grafana instance is setup with the Redis data source to visualize the data.
 
+docker-compose is used to setup the server. Go to `server`:
+```
+cd server
+```
+Start the server:
+
+```
+docker-compose up
+```

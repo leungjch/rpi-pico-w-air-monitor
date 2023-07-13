@@ -4,10 +4,9 @@ This project is a simple indoor air monitoring system based on the Raspberry Pi 
 
 The Redis/Grafana/Rust backend are all hosted on an AWS t2.micro.
 
-<img width="1440" alt="image" src="https://github.com/leungjch/pico-air-monitor/assets/28817028/e386def0-a351-4bdc-bc59-d87548fe8bbf">
+<img width="1440" alt="image" src="https://github.com/leungjch/rpi-pico-w-air-monitor/assets/28817028/8d08e4fb-c78b-4754-9255-fc8904122842">
 
-![pico-air-diagram drawio (2)](https://github.com/leungjch/pico-air-monitor/assets/28817028/2cb7f79d-8172-460c-b546-ef4e6270e91c)
-
+![pico-air-diagram drawio (3)](https://github.com/leungjch/rpi-pico-w-air-monitor/assets/28817028/6eb899b7-6c47-4bb8-b016-a93358199f2b)
 
 # Setup
 

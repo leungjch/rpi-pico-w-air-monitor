@@ -104,7 +104,6 @@ err_t example_publish(mqtt_client_t *client, const char *topic, const char *pub_
   u8_t qos = 0;    /* 0 1 or 2, see MQTT specification */
   u8_t retain = 0; /* No don't retain such crappy payload... */
   cyw43_arch_lwip_begin();
-  printf("Publishing message %s to topic: \'%s\'\n", pub_payload, topic);
   err = mqtt_publish(client, "pico_bme280", pub_payload, strlen(pub_payload), qos, retain, mqtt_pub_request_cb, arg);
   cyw43_arch_lwip_end();
   if (err != ERR_OK)

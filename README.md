@@ -6,6 +6,8 @@ The Redis/Grafana/Rust backend are Dockerized and hosted on an AWS t2.micro.
 
 <img width="1440" alt="image" src="https://github.com/leungjch/rpi-pico-w-air-monitor/assets/28817028/8d08e4fb-c78b-4754-9255-fc8904122842">
 
+Architecture diagram:
+
 ![pico-air-diagram drawio (3)](https://github.com/leungjch/rpi-pico-w-air-monitor/assets/28817028/6eb899b7-6c47-4bb8-b016-a93358199f2b)
 
 # Setup

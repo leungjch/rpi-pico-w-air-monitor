@@ -26,6 +26,8 @@ cmake -DPICO_BOARD=pico_w -DWIFI_SSID={YOUR_WIFI_SSD} -DWIFI_PASSW
 ORD={YOUR_WIFI_PASSWORD} -DPICO_SDK_PATH={PATH_TO_PICO_SDK} ..
 ```
 
+The Pico SDK can be cloned here: https://github.com/raspberrypi/pico-sdk
+
 Build:
 ```
 make pico_air_monitor

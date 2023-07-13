@@ -153,25 +153,27 @@ void bme280_read_raw(int32_t *temp, int32_t *pressure, int32_t *humidity)
     // write to hum control register
     uint8_t buf_hum[2];
     buf_hum[0] = REG_CTRL_HUM;
-    buf_hum[1] = mode << 5 | mode << 2 | 1;
+    buf_hum[1] = mode;
     i2c_write_blocking(i2c_default, ADDR, buf_hum, 2, false);
 
     // write to ctrl_meas register
     uint8_t buf_ctrl_meas[2];
     buf_ctrl_meas[0] = REG_CTRL_MEAS;
-    buf_ctrl_meas[1] = 0x5 << mode | 0x3 << 2 | 0x1;
+    buf_ctrl_meas[1] = mode << 5 | mode << 2 | 1;
     i2c_write_blocking(i2c_default, ADDR, buf_ctrl_meas, 2, false);
+
+
 
     uint8_t buf[8];
     uint8_t reg = REG_PRESSURE_MSB;
     i2c_write_blocking(i2c_default, ADDR, &reg, 1, true); // true to keep master control of bus
     i2c_read_blocking(i2c_default, ADDR, buf, 8, false);  // false - finished with bus
 
+
     // store the 20 bit read in a 32 bit signed integer for conversion
     *pressure = (buf[0] << 12) | (buf[1] << 4) | (buf[2] >> 4);
     *temp = (buf[3] << 12) | (buf[4] << 4) | (buf[5] >> 4);
-
-    uint8_t buf_hum_data[2];
+    printf("Temp is %d\n", *temp);
     *humidity = (buf[6] << 8) | buf[7];
 }
 

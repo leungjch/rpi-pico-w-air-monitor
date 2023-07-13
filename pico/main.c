@@ -7,7 +7,7 @@
 #include "bme280.h"
 
 // set mqtt broker url to broker.hivemq.com
-const char *MQTT_BROKER_URL = "3.122.167.216";
+const char *MQTT_BROKER_URL = "3.75.150.118";
 
 #ifndef LWIP_MQTT_EXAMPLE_IPADDR_INIT
 #if LWIP_IPV4
@@ -97,19 +97,21 @@ void do_connect(MQTT_CLIENT_DATA_T *mqtt_client, void *arg)
   }
 }
 
-err_t example_publish(mqtt_client_t *client, void *arg)
+err_t example_publish(mqtt_client_t *client, const char *topic, const char *pub_payload, void *arg)
 {
 
-  const char *pub_payload = "Picow MQTT";
   err_t err;
-  u8_t qos = 2;    /* 0 1 or 2, see MQTT specification */
+  u8_t qos = 0;    /* 0 1 or 2, see MQTT specification */
   u8_t retain = 0; /* No don't retain such crappy payload... */
   cyw43_arch_lwip_begin();
-  err = mqtt_publish(client, "pico", pub_payload, strlen(pub_payload), qos, retain, mqtt_pub_request_cb, arg);
+  printf("Publishing message %s to topic: \'%s\'\n", pub_payload, topic);
+  err = mqtt_publish(client, "pico_bme280", pub_payload, strlen(pub_payload), qos, retain, mqtt_pub_request_cb, arg);
   cyw43_arch_lwip_end();
   if (err != ERR_OK)
   {
     printf("Publish err: %d\n", err);
+  } else {
+    printf("Publish success\n");
   }
 
   return err;
@@ -186,12 +188,14 @@ int main()
 
   sleep_ms(500); // sleep so that data polling and register update don't collide
 
+  // retrieve fixed compensation params
+  struct bme280_calib_param params;
+  bme280_get_calib_params(&params);
+
+do_connect(mqtt, mqtt);
   while (true)
   {
 
-    // retrieve fixed compensation params
-    struct bme280_calib_param params;
-    bme280_get_calib_params(&params);
 
     int32_t raw_temperature;
     int32_t raw_pressure;
@@ -208,14 +212,19 @@ int main()
     printf("Pressure = %.3f kPa\n", pressure / 1000.f);
     printf("Temp. = %.2f C\n", temperature / 100.f);
     printf("Humidity = %.2f %%\n", (double)humidity / (double)1024.0);
+    // reconnect if disconnected
+
+    do_connect(mqtt, mqtt);
 
     // publish temperature and pressure values and humdidity to MQTT broker
     char buf[100];
     sprintf(buf, "{\"temperature\": %.2f, \"pressure\": %.3f, \"humidity\": %.2f}", temperature / 100.f, pressure / 1000.f, (double)humidity / (double)1024.0);
-
-    do_connect(mqtt, mqtt);
-    // example_publish(mqtt->mqtt_client_inst, mqtt);
-    mqtt_publish(mqtt->mqtt_client_inst, "pico_bme280", buf, strlen(buf), 0, 0, mqtt_pub_request_cb, mqtt);
+    // write "pico_bme280" into topic
+    char topic[100];
+    sprintf(topic, "pico_bme280");
+    
+    example_publish(mqtt->mqtt_client_inst, topic, buf, mqtt);
+    // mqtt_publish(mqtt->mqtt_client_inst, "pico_bme280", buf, strlen(buf), 0, 0, mqtt_pub_request_cb, mqtt);
     
     cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 0);
     sleep_ms(500);

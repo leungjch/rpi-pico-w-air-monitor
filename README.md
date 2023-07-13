@@ -2,6 +2,8 @@
 
 This project is a simple indoor air monitoring system based on the Raspberry Pi Pico W, the BME280 sensor and MQTT. The Pico W is a microcontroller board with WiFi and the BME280 is a sensor for temperature, humidity and air pressure. The data is sent to a MQTT broker which is forwarded to a Redis instance by a Rust backend. The data and Redis server health are visualized as a Grafana dashboard.
 
+The Redis/Grafana/Rust backend are all hosted on an AWS t2.micro.
+
 <img width="1440" alt="image" src="https://github.com/leungjch/pico-air-monitor/assets/28817028/e386def0-a351-4bdc-bc59-d87548fe8bbf">
 
 ![pico-air-diagram drawio (2)](https://github.com/leungjch/pico-air-monitor/assets/28817028/2cb7f79d-8172-460c-b546-ef4e6270e91c)
